@@ -12,11 +12,11 @@
   },
    "permissions": [
         "tabs",
-        "http://nytro.com.ua/*"
+        "http://site_name*"
     ],
     "content_scripts": [
         {
-            "matches": ["http://nytro.com.ua/events_control.php*"],
+            "matches": ["http://page_with_recive_code*"],
             "js": ["action.js"]
         }
     ],
