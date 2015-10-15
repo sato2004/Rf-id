@@ -1,0 +1,13 @@
+{
+  "name": "Rf-id reader",
+  "description": "Rf-id reader App.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "rfid-16.png", "128": "rfid-128.png" },
+  "permissions": ["serial"]
+}

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Rf ID reader",
+  "description": "This extension read data from china RF ID",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+	"default_title": "Click here!",
+	"default_popup": "popup.html"
+  },
+   "permissions": [
+        "tabs",
+        "http://nytro.com.ua/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://nytro.com.ua/events_control.php*"],
+            "js": ["action.js"]
+        }
+    ],
+    "background": {
+        "persistent":	false,
+        "scripts": 		["background.js"]
+    }
+}
